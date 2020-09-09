@@ -1,10 +1,22 @@
 import React from 'react';
 import './App.css';
+import Sidebar from './Sidebar';
+import Chat from './Chat';
 
 function App() {
   return (
-    <h1>Mern Whatsapp</h1>
-  )
+    <div className="app">
+        <div className="app_body">
+          {/* Sidebar */}
+          <Sidebar />
+
+          {/* chat Component */}
+          <Chat />
+
+          </div>
+    </div>
+ 
+  );
 }
 
 export default App
